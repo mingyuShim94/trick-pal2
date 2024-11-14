@@ -7,10 +7,10 @@ export default function CreatePage() {
       <div className="max-w-6xl mx-auto space-y-6">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-gray-900">
-            친구를 속일 컨텐츠를 선택하세요
+            Choose Content to Trick Your Friend
           </h1>
           <p className="text-gray-600">
-            친구의 호기심을 자극할 만한 컨텐츠를 골라보세요
+            Select content that will pique your friend&apos;s curiosity
           </p>
         </div>
 

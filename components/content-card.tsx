@@ -41,7 +41,7 @@ export function ContentCard({
           className="w-full"
           onClick={() => router.push(`/create/jumpscare?content=${id}`)}
         >
-          이 컨텐츠로 시작하기
+          Start with This
         </Button>
       </CardFooter>
     </Card>

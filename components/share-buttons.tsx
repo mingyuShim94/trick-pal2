@@ -15,13 +15,13 @@ export function ShareButtons({ shareUrl }: ShareButtonsProps) {
           className="flex-1"
           onClick={() => {
             navigator.clipboard.writeText(shareUrl);
-            alert("링크가 복사되었습니다!");
+            alert("Link copied!");
           }}
         >
-          링크 복사하기
+          Copy Link
         </Button>
         <Button variant="outline" className="flex-1" asChild>
-          <Link href="/create">다시 선택하기</Link>
+          <Link href="/create">Choose Again</Link>
         </Button>
       </div>
       <div className="flex gap-2">
@@ -35,7 +35,7 @@ export function ShareButtons({ shareUrl }: ShareButtonsProps) {
             );
           }}
         >
-          트위터로 공유
+          Share on Twitter
         </Button>
         <Button
           className="flex-1"
@@ -47,7 +47,7 @@ export function ShareButtons({ shareUrl }: ShareButtonsProps) {
             );
           }}
         >
-          페이스북으로 공유
+          Share on Facebook
         </Button>
       </div>
     </div>

@@ -12,9 +12,9 @@ export default function JumpscareSelectPage({
     return (
       <main className="min-h-screen p-4 md:p-8 bg-gradient-to-b from-blue-50 to-blue-100">
         <div className="max-w-md mx-auto text-center space-y-4">
-          <h1 className="text-2xl font-bold text-red-600">잘못된 접근입니다</h1>
+          <h1 className="text-2xl font-bold text-red-600">Invalid Access</h1>
           <Button asChild>
-            <Link href="/create">처음부터 다시 시작하기</Link>
+            <Link href="/create">Start Over</Link>
           </Button>
         </div>
       </main>
@@ -28,10 +28,10 @@ export default function JumpscareSelectPage({
       <div className="max-w-6xl mx-auto space-y-6">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-gray-900">
-            깜짝 놀래킬 콘텐츠를 선택하세요
+            Choose a Jump Scare
           </h1>
           <p className="text-gray-600">
-            친구를 놀래킬 무서운 콘텐츠를 골라보세요
+            Select a scary content to surprise your friend
           </p>
         </div>
 

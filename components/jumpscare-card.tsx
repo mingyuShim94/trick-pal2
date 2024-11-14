@@ -53,7 +53,7 @@ export function JumpscareCard({
             )
           }
         >
-          이 콘텐츠로 결정하기
+          Choose this content
         </Button>
       </CardFooter>
     </Card>
