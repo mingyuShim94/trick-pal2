@@ -44,7 +44,7 @@ export const jumpscareContents = [
     description: "A creepy ghost girl appears suddenly",
     thumbnail: "/images/jumpscares/ghost-girl-thumb.png",
     video: "/videos/jumpscares/ghost-girl.mp4",
-    sound: "/sounds/jumpscares/scream-1.mp3",
+    sound: "/sounds/jumpscares/scream-1.wav",
   },
   {
     id: "zombie",
@@ -52,7 +52,7 @@ export const jumpscareContents = [
     description: "A terrifying zombie breaks through the screen",
     thumbnail: "/images/jumpscares/zombie-thumb.png",
     video: "/videos/jumpscares/zombie.mp4",
-    sound: "/sounds/jumpscares/scream-2.mp3",
+    sound: "/sounds/jumpscares/scream-2.wav",
   },
   {
     id: "doll",
@@ -60,6 +60,6 @@ export const jumpscareContents = [
     description: "A creepy doll that moves unexpectedly",
     thumbnail: "/images/jumpscares/doll-thumb.png",
     video: "/videos/jumpscares/doll.mp4",
-    sound: "/sounds/jumpscares/scream-3.mp3",
+    sound: "/sounds/jumpscares/scream-3.wav",
   },
 ];

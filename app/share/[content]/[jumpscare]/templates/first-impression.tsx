@@ -15,40 +15,47 @@ export const FirstImpression = ({ onComplete }: TemplateProps) => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 space-y-4">
-      <div className="flex items-center justify-center space-x-2">
-        <Users className="w-8 h-8 text-green-500" />
-        <h1 className="text-2xl font-bold">Friend Feedback Analysis</h1>
+    <div className="max-w-2xl mx-auto p-8 space-y-8">
+      <div className="flex items-center justify-center space-x-3">
+        <Users className="w-12 h-12 text-green-500" />
+        <h1 className="text-4xl font-bold text-green-500">
+          Friend Feedback Analysis
+        </h1>
       </div>
 
       {!analyzing ? (
-        <Card>
+        <Card className="p-4">
           <CardHeader>
-            <CardTitle>Anonymous First Impression Data</CardTitle>
+            <CardTitle className="text-3xl">
+              Anonymous First Impression Data
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-gray-600 mb-4">
-              Using anonymous data collection, we&apos;ve gathered honest
-              feedback about your first impressions from your social circle.
-            </p>
-            <Button
-              className="w-full bg-green-500 hover:bg-green-600"
-              onClick={startAnalysis}
-            >
-              View My Results
-            </Button>
+            <div className="p-12 text-center space-y-6">
+              <p className="text-lg text-gray-600 mb-4">
+                Using anonymous data collection, we&apos;ve gathered honest
+                feedback about your first impressions from your social circle.
+              </p>
+              <Button
+                className="w-full bg-green-500 hover:bg-green-600 text-lg px-8 py-6"
+                size="lg"
+                onClick={startAnalysis}
+              >
+                View My Results
+              </Button>
+            </div>
           </CardContent>
         </Card>
       ) : (
-        <Card>
-          <CardContent className="pt-6">
-            <div className="space-y-8 text-center">
-              <div className="w-24 h-24 mx-auto rounded-full border-4 border-t-green-500 animate-spin" />
-              <div className="space-y-2">
-                <h2 className="text-xl font-semibold">
+        <Card className="p-4">
+          <CardContent className="pt-8">
+            <div className="space-y-12 text-center py-8">
+              <div className="w-32 h-32 mx-auto rounded-full border-4 border-t-green-500 animate-spin" />
+              <div className="space-y-4">
+                <h2 className="text-3xl font-semibold">
                   Collecting Feedback...
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-xl text-gray-600">
                   Gathering anonymous evaluations from your friends
                 </p>
               </div>

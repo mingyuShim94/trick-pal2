@@ -15,7 +15,10 @@ export default function SharePage({
   const [showJumpscare, setShowJumpscare] = useState(false);
   const [audio] = useState(
     typeof window !== "undefined"
-      ? new Audio("/sounds/jumpscares/scream.mp3")
+      ? new Audio(
+          jumpscareContents.find((content) => content.id === params.jumpscare)
+            ?.sound || "/sounds/jumpscares/scream.mp3"
+        )
       : null
   );
 
