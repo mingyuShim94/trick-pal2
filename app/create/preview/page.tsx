@@ -43,7 +43,8 @@ export default function PreviewPage({
     );
   }
 
-  const shareUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/share/${searchParams.content}/${searchParams.jumpscare}`;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const shareUrl = `${baseUrl}/share/${searchParams.content}/${searchParams.jumpscare}`;
 
   return (
     <main className="min-h-screen p-4 md:p-8 bg-gradient-to-b from-blue-50 to-blue-100">

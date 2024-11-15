@@ -1,53 +1,85 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  TelegramShareButton,
+  LineShareButton,
+  RedditShareButton,
+  LinkedinShareButton,
+  EmailShareButton,
+} from "react-share";
 
 interface ShareButtonsProps {
   shareUrl: string;
 }
 
 export function ShareButtons({ shareUrl }: ShareButtonsProps) {
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(shareUrl);
+    alert("Link copied!");
+  };
+
   return (
     <div className="space-y-4">
-      <div className="flex gap-2">
+      <h2 className="text-xl font-semibold text-center">Share</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <WhatsappShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            WhatsApp
+          </Button>
+        </WhatsappShareButton>
+
+        <TelegramShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            Telegram
+          </Button>
+        </TelegramShareButton>
+
+        <LineShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            LINE
+          </Button>
+        </LineShareButton>
+
+        <TwitterShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            Twitter
+          </Button>
+        </TwitterShareButton>
+
+        <FacebookShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            Facebook
+          </Button>
+        </FacebookShareButton>
+
+        <RedditShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            Reddit
+          </Button>
+        </RedditShareButton>
+
+        <LinkedinShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            LinkedIn
+          </Button>
+        </LinkedinShareButton>
+
+        <EmailShareButton url={shareUrl}>
+          <Button variant="outline" className="w-full">
+            Email
+          </Button>
+        </EmailShareButton>
+
         <Button
-          className="flex-1"
-          onClick={() => {
-            navigator.clipboard.writeText(shareUrl);
-            alert("Link copied!");
-          }}
+          variant="outline"
+          className="w-full col-span-2 md:col-span-4"
+          onClick={handleCopyLink}
         >
           Copy Link
-        </Button>
-        <Button variant="outline" className="flex-1" asChild>
-          <Link href="/create">Choose Again</Link>
-        </Button>
-      </div>
-      <div className="flex gap-2">
-        <Button
-          className="flex-1"
-          onClick={() => {
-            window.open(
-              `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                shareUrl
-              )}`
-            );
-          }}
-        >
-          Share on Twitter
-        </Button>
-        <Button
-          className="flex-1"
-          onClick={() => {
-            window.open(
-              `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                shareUrl
-              )}`
-            );
-          }}
-        >
-          Share on Facebook
         </Button>
       </div>
     </div>

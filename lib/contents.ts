@@ -55,19 +55,11 @@ export const jumpscareContents = [
     sound: "/sounds/jumpscares/scream-2.mp3",
   },
   {
-    id: "demon",
-    title: "Demon",
-    description: "A horrifying demon emerges from darkness",
-    thumbnail: "/images/jumpscares/demon-thumb.png",
-    video: "/videos/jumpscares/demon.mp4",
-    sound: "/sounds/jumpscares/scream-3.mp3",
-  },
-  {
     id: "doll",
     title: "Cursed Doll",
     description: "A creepy doll that moves unexpectedly",
     thumbnail: "/images/jumpscares/doll-thumb.png",
     video: "/videos/jumpscares/doll.mp4",
-    sound: "/sounds/jumpscares/scream-4.mp3",
+    sound: "/sounds/jumpscares/scream-3.mp3",
   },
 ];
