@@ -5,6 +5,8 @@ import { deceptionContents, jumpscareContents } from "@/lib/contents";
 import Link from "next/link";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 export default function PreviewPage({
   searchParams,
 }: {

@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { JumpscareCard } from "@/components/jumpscare-card";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 export default function JumpscareSelectPage({
   searchParams,
 }: {
