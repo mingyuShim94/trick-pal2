@@ -8,8 +8,6 @@ import {
   TelegramShareButton,
   LineShareButton,
   RedditShareButton,
-  LinkedinShareButton,
-  EmailShareButton,
 } from "react-share";
 
 interface ShareButtonsProps {
@@ -25,7 +23,7 @@ export function ShareButtons({ shareUrl }: ShareButtonsProps) {
   return (
     <div className="space-y-4">
       <h2 className="text-xl font-semibold text-center">Share</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-3 gap-3">
         <WhatsappShareButton url={shareUrl}>
           <Button variant="outline" className="w-full">
             WhatsApp
@@ -62,21 +60,9 @@ export function ShareButtons({ shareUrl }: ShareButtonsProps) {
           </Button>
         </RedditShareButton>
 
-        <LinkedinShareButton url={shareUrl}>
-          <Button variant="outline" className="w-full">
-            LinkedIn
-          </Button>
-        </LinkedinShareButton>
-
-        <EmailShareButton url={shareUrl}>
-          <Button variant="outline" className="w-full">
-            Email
-          </Button>
-        </EmailShareButton>
-
         <Button
           variant="outline"
-          className="w-full col-span-2 md:col-span-4"
+          className="w-full col-span-3"
           onClick={handleCopyLink}
         >
           Copy Link

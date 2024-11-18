@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TrickPal - Fun Social Media Pranks",
+  title: "TrickPal - The Most Fun Way to Surprise Your Friends",
   description:
-    "Create hilarious jump scares and prank your friends with fake social media analysis tools. Share funny moments and make memories with TrickPal!",
+    "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
   keywords: [
     "social media prank",
     "jump scare",
@@ -33,18 +33,31 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "TrickPal - Fun Social Media Pranks",
+    title: "TrickPal - The Most Fun Way to Surprise Your Friends",
     description:
-      "Create hilarious jump scares and prank your friends with fake social media analysis tools",
+      "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
     type: "website",
     locale: "en_US",
     siteName: "TrickPal",
+    images: [
+      {
+        url: "/images/root_metaImg.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "TrickPal Meta Image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TrickPal - Fun Social Media Pranks",
+    title: "TrickPal - The Most Fun Way to Surprise Your Friends",
     description:
-      "Create hilarious jump scares and prank your friends with fake social media analysis tools",
+      "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
+    images: [
+      {
+        url: "/images/root_metaImg.jpeg",
+      },
+    ],
   },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   themeColor: "#ffffff",
