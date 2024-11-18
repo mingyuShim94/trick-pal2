@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
   icons: {
-    icon: "/favicon.png",
+    icon: "/images/favicon.webp",
   },
   keywords: [
     "social media prank",
