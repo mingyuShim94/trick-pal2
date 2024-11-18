@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { templates, type TemplateKey } from "./templates";
 
+export const runtime = "edge";
+
 export default function SharePage({
   params,
 }: {
