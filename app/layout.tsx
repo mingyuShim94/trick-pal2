@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/root_metaImg.jpeg`,
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/root_metaImg.webp`,
       },
     ],
   },
