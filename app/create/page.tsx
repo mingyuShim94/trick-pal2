@@ -26,7 +26,7 @@ export default function CreatePage() {
                   <div className="border rounded-lg overflow-hidden">
                     <div className="relative aspect-[1200/630]">
                       <Image
-                        src={content.metaImage}
+                        src={content.thumbnail}
                         alt={`Preview of ${content.title}`}
                         fill
                         className="object-cover"

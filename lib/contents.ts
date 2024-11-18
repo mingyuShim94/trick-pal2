@@ -4,21 +4,21 @@ export const deceptionContents = [
     category: "Personal Analysis",
     title: "See Who Screenshot Your Instagram Stories",
     description: "Find out who secretly captured your stories!",
-    metaImage: "/images/metaimages/insta-capture-meta.jpeg",
+    thumbnail: "/images/metaimages/insta-capture-meta.jpeg",
   },
   {
     id: "love-style",
     category: "Personal Analysis",
     title: "Discover Your Dating Style Through SNS",
     description: "AI analysis of your unique dating patterns",
-    metaImage: "/images/metaimages/love-style-meta.jpeg",
+    thumbnail: "/images/metaimages/love-style-meta.jpeg",
   },
   {
     id: "celeb-match",
     category: "Personal Analysis",
     title: "Find Your Celebrity Look-alike (99% Match)",
     description: "AI-powered facial analysis to find your celebrity twin",
-    metaImage: "/images/metaimages/celeb-match-meta.jpeg",
+    thumbnail: "/images/metaimages/celeb-match-meta.jpeg",
   },
 ];
 
