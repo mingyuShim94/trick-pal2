@@ -29,7 +29,7 @@ export const jumpscareContents = [
     description: "A creepy ghost girl appears suddenly",
     thumbnail: `${process.env.NEXT_PUBLIC_BASE_URL}/images/jumpscares/ghost-girl-thumb.png`,
     video: `${process.env.NEXT_PUBLIC_BASE_URL}/videos/jumpscares/ghost-girl.mp4`,
-    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/scream-1.wav`,
+    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/ghost-girl.mp3`,
   },
   {
     id: "zombie",
@@ -37,7 +37,7 @@ export const jumpscareContents = [
     description: "A terrifying zombie breaks through the screen",
     thumbnail: `${process.env.NEXT_PUBLIC_BASE_URL}/images/jumpscares/zombie-thumb.png`,
     video: `${process.env.NEXT_PUBLIC_BASE_URL}/videos/jumpscares/zombie.mp4`,
-    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/scream-2.wav`,
+    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/zombie.mp3`,
   },
   {
     id: "doll",
@@ -45,6 +45,6 @@ export const jumpscareContents = [
     description: "A creepy doll that moves unexpectedly",
     thumbnail: `${process.env.NEXT_PUBLIC_BASE_URL}/images/jumpscares/doll-thumb.png`,
     video: `${process.env.NEXT_PUBLIC_BASE_URL}/videos/jumpscares/doll.mp4`,
-    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/scream-3.wav`,
+    sound: `${process.env.NEXT_PUBLIC_BASE_URL}/sounds/jumpscares/doll.mp3`,
   },
 ];

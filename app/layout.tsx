@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "TrickPal - The Most Fun Way to Surprise Your Friends",
   description:
     "Did you think it was a personality test, but got surprised instead? A fun prank app to enjoy with your friends!",
+  icons: {
+    icon: "/favicon.png",
+  },
   keywords: [
     "social media prank",
     "jump scare",
