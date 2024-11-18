@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "TrickPal",
     images: [
       {
-        url: "/images/root_metaImg.jpeg",
+        url: "/images/root_metaImg.webp",
         width: 1200,
         height: 630,
         alt: "TrickPal Meta Image",
