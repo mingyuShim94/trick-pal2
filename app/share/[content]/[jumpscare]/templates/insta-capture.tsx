@@ -13,6 +13,7 @@ export const InstaCapture = ({ onComplete }: TemplateProps) => {
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [hasCompleted, setHasCompleted] = useState(false);
 
   const startAnalysis = () => {
     setLoading(true);
@@ -36,13 +37,14 @@ export const InstaCapture = ({ onComplete }: TemplateProps) => {
   }, [step]);
 
   useEffect(() => {
-    if (step === 2) {
+    if (step === 2 && !hasCompleted) {
       const timeout = setTimeout(() => {
         onComplete();
+        setHasCompleted(true);
       }, 5000);
       return () => clearTimeout(timeout);
     }
-  }, [step, onComplete]);
+  }, [step, onComplete, hasCompleted]);
 
   const features = [
     {
